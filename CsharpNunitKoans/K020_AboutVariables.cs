@@ -17,7 +17,7 @@ namespace TheKoans
 			//Even though we don't specify types explicitly, the compiler
 			//will pick one for us when we choose the var keyword
 			var name = "John";
-			Assert.AreEqual (typeof(FILL_ME_IN), name.GetType (), "Identify the data type of the value John to proceed on your Karma quest.");
+			Assert.AreEqual (typeof(string), name.GetType (), "Identify the data type of the value John to proceed on your Karma quest.");
 
 			//but only if it can. So this doesn't work
 			// (Try uncommenting the line below to see how the compiler reacts)
