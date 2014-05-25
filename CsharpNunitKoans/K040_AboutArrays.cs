@@ -30,8 +30,7 @@ namespace TheKoans
 			Assert.AreEqual (new int[] { 42 }, array, "These arrays are literally equal... But you won't see this string in the error message.");
 
 			//Are arrays 0-based or 1-based?
-			Assert.AreEqual (42, array [((int)0)], "Well, it's either 0 or 1.. you have a 110010-110010 chance of getting it right."); // I was wrong
-
+			Assert.AreEqual (42, array [((int)0)], "Well, it's either 0 or 1.. you have a 110010-110010 chance of getting it right.");
 			//This is important because...
 			Assert.IsTrue (array.IsFixedSize, "...because Fixed Size arrays are not dynamic");
 
@@ -116,8 +115,6 @@ namespace TheKoans
 			var poppedValue = stack.Pop ();
 			Assert.AreEqual ("last", poppedValue, "Popped values come from the top.  I suppose if they came from the bottom it would be called... Plop?");
 			CollectionAssert.AreEqual ((ICollection)stack, stack.ToArray (), "I'm not sure why this one is here.. I guess there wasn't enough material to create an AboutStacks...");
-			
-			// Pop doens't affect the stack
 		}
 
 		[Test]

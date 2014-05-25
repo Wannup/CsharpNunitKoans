@@ -67,7 +67,7 @@ namespace TheKoans
 			b2 = true;
 
 			Assert.AreEqual (false, b1, "Indenting usually makes your code more readable, but only when used correctly..");
-			Assert.AreEqual (true, b2, "Whitespace is not always your friend.. Brace yourselves!"); // winter?
+			Assert.AreEqual (true, b2, "Whitespace is not always your friend.. Brace yourselves!");
 		}
 
 		[Test]
@@ -163,8 +163,6 @@ namespace TheKoans
 				i += 1;
 			}
 			Assert.AreEqual (120, result, "Awww - Break out! Le Break: c'est chic!");
-			
-			// break => break! Does not continue until the end of the iteration.
 		}
 
 		[Test]
@@ -180,8 +178,6 @@ namespace TheKoans
 				result += i;
 			}
 			Assert.AreEqual (1+3+5+7+9, result, "Don't let the math scare your Karma away.. Persevere!");
-			
-			// continue => finishes iteration imediately
 		}
 
 		[Test]
@@ -240,8 +236,6 @@ namespace TheKoans
 			}
 
 			Assert.AreEqual ("When we tried to move to the next item in the list", whoCaughtTheException, "If you can solve this whodunit mystery, your Karma will thank you.");
-			
-			// the enumerator used by foreach needs the collection to be static (not changing) or else the "MoveNext" call causes the exception.
 		}
 	}
 }

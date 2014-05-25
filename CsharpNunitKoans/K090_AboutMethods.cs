@@ -3,7 +3,6 @@ using NUnit.Framework;
 
 namespace TheKoans
 {
-
 	[TestFixture]
 	public class K090_AboutMethods : KoanHelper
 	{
@@ -16,7 +15,7 @@ namespace TheKoans
 		[Test]
 		public void ExtensionMethodsShowUpInTheCurrentClass ()
 		{
-			Assert.AreEqual ("Hello!", this.HelloWorld ()); // I was looking for you!
+			Assert.AreEqual ("Hello!", this.HelloWorld ());
 		}
 
 		[Test]
@@ -131,7 +130,7 @@ namespace TheKoans
 			string superSecretMessage = secret.GetType ()
                 .GetMethod ("SooperSeekrit", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
                 .Invoke (secret, null) as string;
-			Assert.AreEqual ("No one will find me!", superSecretMessage); // Yes we did !
+			Assert.AreEqual ("No one will find me!", superSecretMessage);
 		}
 		//Up till now we've had explicit return types. It's also
 		//possible to create methods which dynamically shift
